@@ -1,0 +1,137 @@
+/* For Desktop */
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size:96px;
+}
+.paragraph{
+    font-family: 'Outfit';
+    font-size: 16px;
+}
+.location-tag{
+   background-color:#444444;
+   opacity: 0.77;
+   color: #ffffff;
+   text-transform: uppercase;
+   padding: 10px;
+   font-family: 'Big Shoulders Display',cursive;
+   width: 50%;
+}
+.location-tag:hover{
+    background-color: #D5966C;
+}
+ /* HomePage */
+.grid_1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.column-1{
+    background-color:#444444;
+}
+.column-3{
+    width: 58%;
+   position: relative;
+   top: 20%;
+   right: 15%;
+}
+
+.grid-1-img{
+    height:80vh;
+    width: 100%;
+}
+
+/* Day at the gallery */
+.grid_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:10% 15%;
+    gap: 20px;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  
+}
+.item1 h2{
+    font-size: 60px;
+}
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+}
+
+.item3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+/* .item4{
+
+} */
+.item5{
+    background-color: #444444;
+    color: #ffffff;
+    padding: 10%;
+    line-height: 1.5;
+    
+ 
+}
+.item1-heading{
+    opacity: 0.77;
+    font-size: 40px;
+    text-transform:uppercase;
+    font-family: 'Big Shoulders Display',cursive;
+}
+.item2-heading{
+    opacity: 0.77;
+    font-size: 40px;
+    text-transform:uppercase;
+    font-family: 'Big Shoulders Display',cursive;
+}
+.image-grid-1{
+    height: 50vh;
+    width: 100%; 
+}
+.image-grid-2{
+    height: 100%;
+    width: 100%;
+}
+ .image-grid-3{
+    height: 50vh;
+    width: 20rem;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #151515;
+    padding: 40px 20px;
+    color: #ffffff;
+    
+}
+.footer-heading{
+    font-family: "Big Shoulders Display",cursive;
+    font-size: 20px;
+    margin:auto;
+    text-transform: uppercase;
+}
+
+.footer-paragraph{
+    font-family:'Outfit',sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.social-logos{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content:end;
+    padding-top: 10px;
+    padding-right: 40px;
+    
+
+    
+}
+  svg:hover path{
+    fill: #D5966C;
+}
