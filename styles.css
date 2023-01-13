@@ -2,10 +2,12 @@
 h1{
     font-family: 'Big Shoulders Display', cursive;
     font-size:96px;
+    line-height: 88px;
 }
 .paragraph{
     font-family: 'Outfit';
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 28px;
 }
 .location-tag{
    background-color:#444444;
@@ -14,12 +16,15 @@ h1{
    text-transform: uppercase;
    padding: 10px;
    font-family: 'Big Shoulders Display',cursive;
-   width: 50%;
+   font-size: 36px;
+   line-height: 36px;
+   width: 80%;
 }
 .location-tag:hover{
     background-color: #D5966C;
 }
  /* HomePage */
+ 
 .grid_1{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -32,6 +37,9 @@ h1{
    position: relative;
    top: 20%;
    right: 15%;
+}
+.column-3 a{
+    text-decoration: none;
 }
 
 .grid-1-img{
@@ -66,9 +74,7 @@ h1{
     grid-row-start: 2;
     grid-row-end: 4;
 }
-/* .item4{
 
-} */
 .item5{
     background-color: #444444;
     color: #ffffff;
@@ -79,13 +85,15 @@ h1{
 }
 .item1-heading{
     opacity: 0.77;
-    font-size: 40px;
+    font-size: 60px;
+    line-height: 50px;
     text-transform:uppercase;
     font-family: 'Big Shoulders Display',cursive;
 }
 .item2-heading{
     opacity: 0.77;
-    font-size: 40px;
+    font-size: 60px;
+    line-height: 50px;
     text-transform:uppercase;
     font-family: 'Big Shoulders Display',cursive;
 }
@@ -101,6 +109,9 @@ h1{
     height: 50vh;
     width: 20rem;
 }
+
+/* Footer */
+
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -111,7 +122,8 @@ footer{
 }
 .footer-heading{
     font-family: "Big Shoulders Display",cursive;
-    font-size: 20px;
+    font-size: 32px;
+    line-height: 32px;
     margin:auto;
     text-transform: uppercase;
 }
@@ -120,6 +132,7 @@ footer{
     font-family:'Outfit',sans-serif;
     text-align: center;
     font-size: 22px;
+    line-height: 32px;
 }
 
 .social-logos{
@@ -135,3 +148,352 @@ footer{
   svg:hover path{
     fill: #D5966C;
 }
+
+/* Location Page for Desktop*/
+
+body{
+    margin: 0;
+}
+
+.location-map {
+    position: relative;
+    top: 0;
+    margin: 0;
+}
+.location-map p{
+    position: relative;
+    top:40px;
+    z-index: 1;
+}
+
+.location-map-img{
+    width: 100%;
+    height: 100%;
+
+}
+.location-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #151515;
+    padding: 40px;
+    height: 100%;
+    position: relative;
+    margin-top: 0;
+    top: 0;
+}
+.grid-loc1{
+    color: #ffffff;
+}
+.grid-loc1 h2{
+    text-transform: uppercase;
+}
+.grid-loc2{
+    color: #ffffff;
+}
+.grid-loc2 h3{
+    color: #D5966C;
+}
+/* Footer for location page */
+.location-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #D5966C;
+    padding: 40px 20px;
+    color: #151515;
+    
+}
+.footer-heading-location{
+    font-family: "Big Shoulders Display",cursive;
+    font-size: 32px;
+    line-height: 32px;
+    margin:auto;
+    text-transform: uppercase;
+}
+
+.footer-paragraph-paragraph{
+    font-family:'Outfit',sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.social-logos-location{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content:end;
+    padding-top: 10px;
+    padding-right: 40px;
+    
+
+    
+}
+  svg:hover path{
+    fill: #ffffff;
+}
+
+
+
+/* For Tablet */
+
+@media screen and (min-width:481px) and (max-width:1024px){
+
+    /* HomePage */
+ 
+.grid_1{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.column-1{
+    background-color: #ffffff;
+}
+.column-2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+}
+
+.column-3{
+    display: flex;
+    width: 100%;
+   position: relative;
+   bottom: 100%;
+   right: 0;
+   left: 100%;
+}
+.column-3 a{
+    text-decoration: none;
+}
+
+.grid-1-img{
+    height:80vh;
+    width: 100%;
+}
+
+}
+
+
+
+/* For Mobile */
+
+@media screen and (min-width:320px) and (max-width:480px){
+    h1{
+        font-family: 'Big Shoulders Display', cursive;
+        font-size:70px;
+        line-height: 70px;
+    }
+    .paragraph{
+        font-family: 'Outfit';
+        font-size: 18px;
+        line-height: 28px;
+        
+    }
+    .location-tag{
+       background-color:#151515;
+       color: #ffffff;
+       text-transform: uppercase;
+       padding: 10px;
+       font-family: 'Big Shoulders Display',cursive;
+       font-size: 36px;
+       line-height: 36px;
+       width: 80%;
+    }
+    .location-tag:hover{
+        background-color: #D5966C;
+    }
+    .grid_1{
+        display:grid;
+        grid-template-columns: 1fr;
+    
+    }
+    .column-1{
+        background-color: #ffffff;
+    }
+    .column-2{
+        grid-row-start: 1;
+    }
+    .column-3{
+        width: 100%;
+       position: relative;
+       top: 0;
+       right: 0;
+    }
+    .column-3 a{
+        text-decoration: none;
+        margin: auto;
+    }
+    
+    .grid-1-img{
+        height:80vh;
+        width: 100%;
+    }
+
+    /* Day at the gallery */
+
+.grid_2{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding:10% 15% 5% 7%;
+    
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+   
+   
+}
+.item1-heading{
+    opacity: 0.77;
+    font-size: 60px;
+    line-height: 50px;
+    text-transform:uppercase;
+    font-family: 'Big Shoulders Display',cursive;
+}
+
+.item2{
+   grid-column-start: 1;
+   grid-column-end: 2;
+   grid-row-start: 1;
+    
+}
+.item2-heading{
+    opacity: 0.77;
+    font-size: 60px;
+    line-height: 50px;
+    text-transform:uppercase;
+    font-family: 'Big Shoulders Display',cursive;
+}
+
+.item3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+}
+
+.item5{
+    background-color: #151515;
+    color: #ffffff;
+    padding: 10%;
+    line-height: 1.5;
+    
+ 
+}
+
+.image-grid-1{
+    height: 50vh;
+    width: 100%; 
+}
+.image-grid-2{
+    height: 100%;
+    width: 100%;
+}
+ .image-grid-3{
+    height: 50vh;
+    width: 20rem;
+}
+
+   /* Footer */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.footer-heading{
+   font-size: 36px;
+   line-height: 36px;
+}
+
+.footer-paragraph{
+  font-size: 18px;
+  line-height: 28px;
+
+}
+
+.social-logos{
+    justify-content:start;
+}
+
+  svg:hover path{
+    fill: #D5966C;
+}
+ 
+/* Location Page for Mobile*/
+
+body{
+    margin: 0;
+}
+
+.location-map {
+    position: relative;
+    top: 0;
+    margin: 0;
+}
+.location-map p{
+    position: relative;
+    top:40px;
+    z-index: 1;
+}
+
+.location-map-img{
+    width: 100%;
+    height: 100%;
+
+}
+.location-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    background-color: #151515;
+    padding: 40px;
+    height: 100%;
+    position: relative;
+    margin-top: 0;
+    top: 0;
+}
+.grid-loc1{
+    color: #ffffff;
+    
+}
+.grid-loc2{
+    color: #ffffff;
+}
+.grid-loc2 h3{
+    color: #D5966C;
+}
+/* Footer for location page */
+.location-footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #D5966C;
+    padding: 40px 20px 10px 0;
+    color: #151515;
+    height: 30vh;
+    
+}
+.footer-heading-location{
+    font-family: "Big Shoulders Display",cursive;
+    font-size: 32px;
+    justify-content: start;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.footer-paragraph-location{
+    font-family:'Outfit',sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.social-logos-location{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content:start;
+    padding-top: 10px;
+    padding-right: 40px;
+    
+
+    
+}
+  svg:hover path{
+    fill: #ffffff;
+}
+}
+
