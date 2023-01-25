@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+  
 /* HomePage */
 
 h1{
@@ -10,18 +15,19 @@ h1{
     text-align: left;
     height: 176px;
     text-transform: uppercase;
+    
 }
 
 .paragraph{
     font-family: 'Outfit';
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
 }
 .location-tag{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color:#444444;
-    opacity: 0.77;
+    background-color:#151515;
     color: #ffffff;
     text-transform: uppercase;
     padding: 0 0 20px 20px;
@@ -65,7 +71,8 @@ h1{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .column-1{
-    background-color:#444444;
+    background-color:#151515;
+    height: 700px;
 }
 .column-3{
     width: 58%;
@@ -101,6 +108,7 @@ h1{
     grid-column-start: 2;
     grid-column-end: 4;
     
+    
 }
 
 .item3{
@@ -111,22 +119,20 @@ h1{
 }
 
 .item5{
-    background-color: #444444;
+    background-color: #151515;
     color: #ffffff;
     padding: 10%;
     line-height: 1.5;
  
 }
 .item1-heading{
-    opacity: 0.77;
     font-size: 60px;
     line-height: 50px;
     text-transform:uppercase;
     font-family: 'Big Shoulders Display',cursive;
 }
 .item2-heading{
-    opacity: 0.77;
-    font-size: 60px;
+    font-size: 55px;
     line-height: 50px;
     text-transform:uppercase;
     font-family: 'Big Shoulders Display',cursive;
@@ -140,8 +146,8 @@ h1{
     width: 100%;
 }
  .image-grid-3{
-    height: 50vh;
-    width: 20rem;
+    height: 313px;
+    width: 100%;
 }
 
 /* Footer */
@@ -150,7 +156,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #151515;
-    padding: 40px 20px;
+    padding: 40px 15%;
     color: #ffffff;
     
 }
@@ -167,15 +173,14 @@ footer{
     text-align: center;
     font-size: 22px;
     line-height: 32px;
+    
 }
 
 .social-logos{
     display: grid;
     grid-template-columns: 50px 50px 50px;
     justify-content:end;
-    padding-top: 10px;
-    padding-right: 40px;  
-
+    padding-top: 10px; 
 }
 
   .logos:hover path{
@@ -188,33 +193,49 @@ body{
     margin: 0;
 }
 
-.homepage-tag{
+ .homepage-tag{
     display: grid;
     grid-template-columns: 1fr 2fr;
     position: absolute;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: "Big Shoulders Display", cursive;
     color: #ffffff;
+    padding: 0 0 20px 0px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: bold;
     background-color: #151515;
     left: 10%;
     top: 0;
     width: 208px;
+    height: 52px;
+    justify-items: center;
+    align-items: center;
 }
+
 .homepage-tag svg{
-    grid-template-columns: 1;
-    grid-template-columns: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
     background-color: #D5966C;
     justify-items: stretch;
     align-items: stretch;
-    padding:10px;
     left: 0;
-}
+    padding: 30px 20px 0 40px;
+    height: 42px;
+    margin-left: 0;
+} 
+
+
 .homepage-tagLink{
     text-decoration: none;
+    
 } 
 .backHome{
     margin: auto;
+    padding-right: 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 .location-map {
     display: grid;
@@ -265,7 +286,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     background-color: #D5966C;
-    padding: 60px 20px;
+    padding: 60px 80px 60px 20px;
     color: #151515;
     
 }
@@ -277,10 +298,13 @@ body{
     text-transform: uppercase;
 }
 
-.footer-paragraph-paragraph{
+.footer-paragraph{
     font-family:'Outfit',sans-serif;
     text-align: center;
     font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+    
 }
 
 .social-logos-location{
@@ -289,9 +313,8 @@ body{
     justify-content:end;
     padding-top: 10px;
     padding-right: 40px;
-    
+   
 
-    
 }
 .loc-logos:hover path{
     fill: #ffffff;
@@ -302,21 +325,73 @@ body{
     h1{
     position: relative;
     left: 45%;
-    background: linear-gradient(to right,rgba(255,255,255,1)55%, rgba(0,0,0,0.77)55%);
+    top:189px;
+    background: linear-gradient(to right,rgba(255,255,255,1)55%, rgba(0,0,0,1)55%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 0;
     }
     .column-1{
     width: 514px;
     left: 166px;
     top: 189px;
     }
+    .column-2{
+        background-image: url(assets/desktop/image-hero.jpg);
+    }
+    .column-3{
+        width: 350px;
+       position: relative;
+       top: 189px;
+       right: 15%;
+       margin-top: 0;
+    }
+
+    .item2{
+        background-image: url(assets/desktop/image-grid-1.jpg);
+    }
+    .item3{
+        background-image: url(assets/desktop/image-grid-2.jpg);
+        height: 720px;
+        
+    }
+    .item4{
+        background-image: url(assets/desktop/image-grid-3.jpg);
+    }
+   
+
+    /* Location page */
+    .location-img{
+        background-image: url(assets/desktop/image-map.png);
+        height: 600px;
+    }
+    .grid-loc1{
+        margin-left: 125px;
+        width: 350px;
+    }
+    .grid-loc1 h2{
+        font-size: 48px;
+        line-height: 50px;
+        font-family: "Big Shoulders Display, cursive";
+    }
+    .grid-loc2{
+        margin-right: 165px;
+    }
+    .grid-loc2 h3{
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .grid-loc2 p{
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 /* For Tablet */
 
 @media screen and (min-width:481px) and (max-width:1024px){
+    
 
     /* HomePage for Tablet*/
 
@@ -324,6 +399,7 @@ h1{
     font-size: 70px;
     line-height: 70px;
     font-weight: 900;
+    margin-top: 0;
 }
 .location-tag{
     background-color: #151515;
@@ -339,24 +415,32 @@ h1{
 }
 .column-1{
     background-color: #ffffff ;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 2;
+    position: relative;
     width: 339px;
     height: 130px;
+    right: 40px;
   
 }
 .column-2{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
+    background-image: url(assets/tablet/image-hero.jpg);
+    height: 700px;
+    width: 437px;
+
 }
 
 .column-3{
     grid-column-start: 2;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
     width: 339px;
+    position: relative;
+    right: 40px;
 }
 .column-3 a{
     text-decoration: none;
@@ -379,8 +463,38 @@ h1{
 .item1 h2{
     font-size: 48px;
 }
+.item2{
+    background-image: url(assets/tablet/image-grid-1.jpg);
+}
+.item3{
+    background-image: url(assets/tablet/image-grid-2.jpg);
+    height: 720px;
+}
+.item4{
+    background-image: url(assets/tablet/image-grid-3.jpg);
+   
+}
+.item5{
+    height: 320px;
+    width: 240px;
+    padding-left:12px;
+    padding-right: 12px;
+}
+
+.image-grid-1{
+    height: 400px;
+}
+.grid-loc1 h2{
+    font-size: 48px;
+    line-height: 50px;
+}
+.grid-loc2 h3{
+    font-size: 32px;
+    line-height: 32px;
+}
 .paragraph{
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 /* Footer for Tablet */
@@ -398,12 +512,19 @@ h1{
     font-size: 16px;
     line-height: 26px;
 }
-
+.location-img{
+    background-image: url(assets/tablet/image-map.png);
+}
 /* Footer for location Page on Tablet */
 .location-map-img{
     width: 100%;
     height: 600px;
 }
+.location-img{
+    background-image: url(assets/tablet/image-map.png);
+    height: 600px;
+}
+
 .location-footer{
    padding: 100px 0 100px;
 }
@@ -415,23 +536,35 @@ h1{
 /* For Mobile */
 
 @media screen and (min-width:320px) and (max-width:480px){
+
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap');
+
     /* Homepage for Mobile */
 
     h1{
         font-family: 'Big Shoulders Display', cursive;
         font-size:70px;
         line-height: 70px;
+        margin: 0;
     }
     .paragraph{
-        font-family: 'Outfit';
+        font-family: "Outfit", sans-serif;
         font-size: 18px;
         line-height: 28px;
+        font-weight: 300;
         
     }
     .location-tag{
         background-color: #151515;
         opacity: 1;
         width: 260px;
+    }
+    .homepage-tag{
+        margin-top: 0;
+    }
+    .homepage-tagLink{
+        left: 0;
+        top: 0;
     }
     
     .grid_1{
@@ -441,14 +574,20 @@ h1{
     .column-1{
         background-color: #ffffff;
         grid-row-start: 2;
+        margin: 0 16px 32px;
+        height: 110px;
     }
     .column-2{
         grid-row-start: 1;
+        background-image: url("assets/mobile/image-hero.jpg");
+        height: 240px;
+        margin-bottom: 32px;
     }
     .column-3{
         width: 100%;
        position: relative;
        grid-row-start: 3;
+       margin: 0 16px;
         top: 0;
         right: 0;
         bottom: 0;
@@ -482,7 +621,6 @@ h1{
     grid-column-end: 2;   
 }
 .item1-heading{
-    opacity: 0.77;
     font-size: 60px;
     line-height: 50px;
     text-transform:uppercase;
@@ -493,7 +631,7 @@ h1{
    grid-column-start: 1;
    grid-column-end: 2;
    grid-row-start: 1;
-    
+   background-image: url(assets/mobile/image-grid-1.jpg); 
 }
 .item2-heading{
     opacity: 0.77;
@@ -507,8 +645,12 @@ h1{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
+    background-image: url(assets/mobile/image-grid-2.jpg);
 }
 
+.item4{
+    background-image: url(assets/mobile/image-grid-3.jpg);
+}
 .item5{
     background-color: #151515;
     color: #ffffff;
@@ -519,16 +661,20 @@ h1{
 }
 
 .image-grid-1{
-    height: 50vh;
+    height: 320px;
     width: 100%; 
 }
 .image-grid-2{
-    height: 100%;
+    height: 480px;
     width: 100%;
 }
  .image-grid-3{
-    height: 50vh;
+    height: 200px;
     width: 100%;
+}
+.location-img{
+    background-image: url(assets/mobile/image-map.png);
+    height: 550px;
 }
 
    /* Footer Mobile*/
@@ -564,7 +710,10 @@ footer{
 body{
     margin: 0;
 }
-
+.homepage-tag{
+    left: 0;
+    top: 0;
+}
 .location-map {
     position: relative;
     top: 0;

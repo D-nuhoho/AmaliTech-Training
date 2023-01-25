@@ -1,4 +1,4 @@
-## Art Gallery Project
+# Art Gallery Project
 
 This website is a capstone project for the Amalitech Training Program which focuses on using HTML and CSS to design a landing page to advertise an art gallery. It contains two webpages and these are the Homepage and Location Page respectively.
 
