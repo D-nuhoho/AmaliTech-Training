@@ -121,7 +121,7 @@ h1{
 .item5{
     background-color: #151515;
     color: #ffffff;
-    padding: 10%;
+    padding: 5%;
     line-height: 1.5;
  
 }
@@ -359,6 +359,7 @@ body{
     .item4{
         background-image: url(assets/desktop/image-grid-3.jpg);
     }
+    
    
 
     /* Location page */
